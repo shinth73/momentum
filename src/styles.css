@@ -1,10 +1,12 @@
+/** @format */
+
 body,
 input,
 select,
 textarea,
 button {
-  font-family: -apple-system, BlinkMacSystemFont, "Neue Haas Grotesk Text Pro",
-    "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Neue Haas Grotesk Text Pro", "Helvetica Neue",
+    Helvetica, Arial, sans-serif;
 }
 
 .form,
@@ -22,7 +24,7 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 280px;
+  margin-top: 200px;
 }
 
 h1 {
@@ -43,6 +45,7 @@ h4 {
 
 .js-todoForm {
   margin-top: 50px;
+  color: white;
 }
 
 .text {
@@ -96,9 +99,28 @@ body {
   list-style: none;
 }
 
+input::placeholder {
+  color: white;
+  font-weight: bold;
+}
+
+.js-weather {
+  color: white;
+  font-size: 30px;
+  text-align: right;
+  margin-right: 30px;
+}
+
+li span {
+  padding-top: 20px;
+}
+
 button {
+  height: 50px;
   margin-right: 20px;
-  border-radius: 50%;
+  border: 0;
+  outline: 0;
+  background-color: transparent;
 }
 
 @keyframes fadein {
